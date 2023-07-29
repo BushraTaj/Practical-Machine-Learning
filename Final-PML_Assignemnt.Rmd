@@ -28,10 +28,7 @@ There are initial two sets of data:
 Here I download the data sets:
 ```{r}
 ### Import the data
-#pml_training <- "https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv"
-#pml_testing <- "https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv"
-#download.file(pml_training, destfile = "pml_training.csv")
-#download.file(pml_testing, destfile = "pml_testing.csv")
+
 training <- read.csv("pml-training.csv", stringsAsFactors=FALSE, na.strings = c("", "#DIV/0", "NA"))
 testing <- read.csv("pml-testing.csv", stringsAsFactors=FALSE, na.strings = c("", "#DIV/0", "NA"))
 
